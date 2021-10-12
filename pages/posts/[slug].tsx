@@ -7,7 +7,7 @@ import PostHeader from "../../components/post-header";
 import Layout from "../../components/layout";
 import PostTitle from "../../components/post-title";
 import Head from "next/head";
-import PostType from "../../types/post";
+import { PostType } from "../../types/post";
 import { getPostBySlug } from "../../fetchData/getPostBySlug";
 import { getPosts } from "../../fetchData/getPosts";
 

@@ -32,7 +32,7 @@ const Index = ({
         <div className="flex mb-16">
           <div
             className="inline-block px-8 py-3 mx-auto text-white bg-black rounded-md cursor-pointer"
-            onClick={() => console.log("Load More")}
+            onClick={async () => await getPosts()}
           >
             Load More
           </div>

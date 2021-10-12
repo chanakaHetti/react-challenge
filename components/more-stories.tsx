@@ -1,4 +1,5 @@
 import PostPreview from "./post-preview";
+import { PostType } from "..//types/post";
 
 type Props = {
   posts: any;
@@ -11,7 +12,7 @@ const MoreStories = ({ posts }: Props) => {
         More Stories
       </h2>
       <div className="grid grid-cols-1 mb-8 md:grid-cols-2 md:gap-x-16 lg:gap-x-32 gap-y-20 md:gap-y-32">
-        {posts.map((post) => (
+        {posts.map((post: PostType) => (
           <PostPreview
             key={post.slug}
             title={post.title}
